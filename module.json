@@ -18,8 +18,26 @@
   "flags": {
     "pf2e-keepers-of-the-grave-world": {
       "pf2e-homebrew": {
+		"baseArmors": {
+		  "grave-mantle": "Grave Mantle",
+		  "skitterhide": "Skitterhide"
+		},
+		"baseWeapons": {
+		  "corpse-fleet-dueling-sword": "Corpse Fleet Dueling Sword",
+		  "void-staff": "Void Staff",
+		  "bone-pistol": "Bone Pistol",
+		  "void-rifle": "Void Rifle"
+		},
         "equipmentTraits": {
-          "dense": {
+          "necrotech": {
+            "label": "Necrotech",
+            "description": "Necrografts are a combination of necromancy and cybernetics made using the tissue of undead. Necrotech augmentation are magical, but they can’t be dispelled unless the effect or attack specifies that it attacks augmentations. A creature with at least one necrotech augment installed gains the undead trait and is damaged by vitality damage (though they are still affected by vitality healing as normal)."
+          },
+		  "elebrian": "Elebrian"
+        },
+        "weaponTraits": {
+          "elebrian": "Elebrian",
+          "necrotech": {
             "label": "Necrotech",
             "description": "Necrografts are a combination of necromancy and cybernetics made using the tissue of undead. Necrotech augmentation are magical, but they can’t be dispelled unless the effect or attack specifies that it attacks augmentations. A creature with at least one necrotech augment installed gains the undead trait and is damaged by vitality damage (though they are still affected by vitality healing as normal)."
           }
@@ -31,6 +49,7 @@
     {
       "name": "items",
       "label": "Items",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part3.png",
       "path": "packs/item",
       "type": "Item",
       "system": "pf2e",
@@ -43,6 +62,7 @@
     {
       "name": "rules",
       "label": "Rules",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part4.png",
       "path": "packs/rules",
       "type": "JournalEntry",
       "system": "pf2e",
@@ -55,6 +75,7 @@
     {
       "name": "actors",
       "label": "Actors",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part1.png",
       "path": "packs/actors",
       "type": "Actor",
       "system": "pf2e",
@@ -67,6 +88,7 @@
     {
       "name": "abilities",
       "label": "Abilities",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part0.png",
       "path": "packs/abilities",
       "type": "Item",
       "system": "pf2e",
@@ -79,7 +101,34 @@
     {
       "name": "feats",
       "label": "Feats",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part2.png",
       "path": "packs/feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "subclasses",
+      "label": "Subclasses",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part6.png",
+      "path": "packs/subclasses",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part5.png",
+      "path": "packs/spells",
       "type": "Item",
       "system": "pf2e",
       "ownership": {
@@ -127,7 +176,9 @@
             "feats",
             "rules",
             "abilities",
-            "actors"
+            "actors",
+            "subclasses",
+            "spells"
           ],
           "folders": [],
           "color": null
