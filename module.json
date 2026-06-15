@@ -1,190 +1,297 @@
 {
-  "id": "pf2e-keepers-of-the-grave-world",
-  "title": "PF2e - Keepers of the Grave World",
-  "version": "#{VERSION}#",
-  "compatibility": {
-    "minimum": "13",
-    "verified": "13"
-  },
-  "description": "<p>A foundry module containing everything from the Keepers of the Grave World supplement.</p><p>This module is meant for use with the PF2e System and Starfinder Anachronism module.</p>",
-  "authors": [
-    {
-      "name": "OfflineEnigma / Michael Hosp",
-      "email": "enigmahomebrew@gmail.com",
-      "discord": "offlineenigma",
-      "flags": {}
-    }
-  ],
-  "flags": {
-    "pf2e-keepers-of-the-grave-world": {
-      "pf2e-homebrew": {
-		"baseArmors": {
-		  "grave-mantle": "Grave Mantle",
-		  "skitterhide": "Skitterhide"
+	"id": "pf2e-keepers-of-the-grave-world",
+	"title": "PF2e - Keepers of the Grave World",
+	"version": "#{VERSION}#",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "13"
+	},
+	"description": "<p>A foundry module containing everything from the Keepers of the Grave World supplement.</p><p>This module is meant for use with the PF2e System and Starfinder Anachronism module.</p>",
+	"authors": [
+		{
+			"name": "OfflineEnigma / Michael Hosp",
+			"email": "enigmahomebrew@gmail.com",
+			"discord": "offlineenigma",
+			"flags": {}
+		}
+	],
+	"flags": {
+		"pf2e-keepers-of-the-grave-world": {
+			"pf2e-homebrew": {
+				"baseArmors": {
+					"grave-mantle": "Grave Mantle",
+					"skitterhide": "Skitterhide"
+				},
+				"baseWeapons": {
+					"corpse-fleet-dueling-sword": "Corpse Fleet Dueling Sword",
+					"void-staff": "Void Staff",
+					"bone-pistol": "Bone Pistol",
+					"void-rifle": "Void Rifle"
+				},
+				"equipmentTraits": {
+					"necrotech": {
+						"label": "Necrotech",
+						"description": "Necrografts are a combination of necromancy and cybernetics made using the tissue of undead. Necrotech augmentation are magical, but they can’t be dispelled unless the effect or attack specifies that it attacks augmentations. A creature with at least one necrotech augment installed gains the undead trait and is damaged by vitality damage (though they are still affected by vitality healing as normal)."
+					},
+					"elebrian": "Elebrian"
+				},
+				"weaponTraits": {
+					"elebrian": "Elebrian",
+					"necrotech": {
+						"label": "Necrotech",
+						"description": "Necrografts are a combination of necromancy and cybernetics made using the tissue of undead. Necrotech augmentation are magical, but they can’t be dispelled unless the effect or attack specifies that it attacks augmentations. A creature with at least one necrotech augment installed gains the undead trait and is damaged by vitality damage (though they are still affected by vitality healing as normal)."
+					}
+				}
+			}
+		}
+	},
+	"packs": [
+		{
+			"name": "items",
+			"label": "Items",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part3.png",
+			"path": "packs/items",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
 		},
-		"baseWeapons": {
-		  "corpse-fleet-dueling-sword": "Corpse Fleet Dueling Sword",
-		  "void-staff": "Void Staff",
-		  "bone-pistol": "Bone Pistol",
-		  "void-rifle": "Void Rifle"
+		{
+			"name": "rules",
+			"label": "Rules",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part4.png",
+			"path": "packs/rules",
+			"type": "JournalEntry",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
 		},
-        "equipmentTraits": {
-          "necrotech": {
-            "label": "Necrotech",
-            "description": "Necrografts are a combination of necromancy and cybernetics made using the tissue of undead. Necrotech augmentation are magical, but they can’t be dispelled unless the effect or attack specifies that it attacks augmentations. A creature with at least one necrotech augment installed gains the undead trait and is damaged by vitality damage (though they are still affected by vitality healing as normal)."
-          },
-		  "elebrian": "Elebrian"
-        },
-        "weaponTraits": {
-          "elebrian": "Elebrian",
-          "necrotech": {
-            "label": "Necrotech",
-            "description": "Necrografts are a combination of necromancy and cybernetics made using the tissue of undead. Necrotech augmentation are magical, but they can’t be dispelled unless the effect or attack specifies that it attacks augmentations. A creature with at least one necrotech augment installed gains the undead trait and is damaged by vitality damage (though they are still affected by vitality healing as normal)."
-          }
-        }
-      }
-    }
-  },
-  "packs": [
-    {
-      "name": "items",
-      "label": "Items",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part3.png",
-      "path": "packs/item",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "rules",
-      "label": "Rules",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part4.png",
-      "path": "packs/rules",
-      "type": "JournalEntry",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "actors",
-      "label": "Actors",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part1.png",
-      "path": "packs/actors",
-      "type": "Actor",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "abilities",
-      "label": "Abilities",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part0.png",
-      "path": "packs/abilities",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "feats",
-      "label": "Feats",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part2.png",
-      "path": "packs/feats",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "subclasses",
-      "label": "Subclasses",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part6.png",
-      "path": "packs/subclasses",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
-      "name": "spells",
-      "label": "Spells",
-      "banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part5.png",
-      "path": "packs/spells",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    }
-  ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "pf2e",
-        "type": "system",
-        "compatibility": {}
-      }
-    ],
-    "requires": [
-      {
-        "id": "sf2e-anachronism",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
-        "id": "pf2e-heresy-of-the-whispering-way",
-        "type": "module",
-        "compatibility": {}
-      }
-    ]
-  },
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "packFolders": [
-    {
-      "name": "OfflineEnigma's Homebrew",
-      "sorting": "a",
-      "packs": [],
-      "folders": [
-        {
-          "name": "Keepers of the Grave World",
-          "sorting": "a",
-          "packs": [
-            "items",
-            "feats",
-            "rules",
-            "abilities",
-            "actors",
-            "subclasses",
-            "spells"
-          ],
-          "folders": [],
-          "color": null
-        }
-      ],
-      "color": null
-    }
-  ]
+		{
+			"name": "actors",
+			"label": "Actors",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part1.png",
+			"path": "packs/actors",
+			"type": "Actor",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "abilities",
+			"label": "Abilities",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part0.png",
+			"path": "packs/abilities",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "feats",
+			"label": "Feats",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part2.png",
+			"path": "packs/feats",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "subclasses",
+			"label": "Subclasses",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part6.png",
+			"path": "packs/subclasses",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "spells",
+			"label": "Spells",
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part5.png",
+			"path": "packs/spells",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "sf2e-items",
+			"label": "Items",
+			"path": "packs/sf2e-items",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part3.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-rules",
+			"label": "Rules",
+			"path": "packs/sf2e-rules",
+			"type": "JournalEntry",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part4.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-actors",
+			"label": "Actors",
+			"path": "packs/sf2e-actors",
+			"type": "Actor",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part1.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-abilities",
+			"label": "Abilities",
+			"path": "packs/sf2e-abilities",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part0.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-feats",
+			"label": "Feats",
+			"path": "packs/sf2e-feats",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part2.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-subclasses",
+			"label": "Subclasses",
+			"path": "packs/sf2e-subclasses",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part6.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-spells",
+			"label": "Spells",
+			"path": "packs/sf2e-spells",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-keepers-of-the-grave-world/assets/banners/part5.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"relationships": {
+		"systems": [
+			{
+				"id": "pf2e",
+				"type": "system",
+				"compatibility": {}
+			},
+			{
+				"id": "sf2e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "1.0.3"
+				}
+			}
+		],
+		"requires": [
+			{
+				"id": "pf2e-heresy-of-the-whispering-way",
+				"type": "module",
+				"compatibility": {}
+			}
+		],
+		"recommends": [
+			{
+				"id": "sf2e-anachronism",
+				"type": "module",
+				"compatibility": {}
+			}
+		]
+	},
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"packFolders": [
+		{
+			"name": "OfflineEnigma's Homebrew",
+			"sorting": "a",
+			"packs": [],
+			"folders": [
+				{
+					"name": "Keepers of the Grave World",
+					"sorting": "a",
+					"packs": [
+						"items",
+						"feats",
+						"rules",
+						"abilities",
+						"actors",
+						"subclasses",
+						"spells",
+						"sf2e-items",
+						"sf2e-rules",
+						"sf2e-actors",
+						"sf2e-abilities",
+						"sf2e-feats",
+						"sf2e-subclasses",
+						"sf2e-spells"
+					],
+					"folders": [],
+					"color": null
+				}
+			],
+			"color": null
+		}
+	]
 }
