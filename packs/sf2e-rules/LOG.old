@@ -1,5 +1,5 @@
-2026/06/14-23:48:36.671 8ccc Recovering log #27
-2026/06/14-23:48:36.671 8ccc Level-0 table #29: started
-2026/06/14-23:48:36.672 8ccc Level-0 table #29: 27751 bytes OK
-2026/06/14-23:48:36.676 8ccc Delete type=0 #27
-2026/06/14-23:48:36.676 8ccc Delete type=3 #26
+2026/06/14-23:48:40.763 9060 Recovering log #30
+2026/06/14-23:48:40.763 9060 Level-0 table #32: started
+2026/06/14-23:48:40.767 9060 Level-0 table #32: 27751 bytes OK
+2026/06/14-23:48:40.769 9060 Delete type=0 #30
+2026/06/14-23:48:40.769 9060 Delete type=3 #28
